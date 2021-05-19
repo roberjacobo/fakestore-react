@@ -1,0 +1,142 @@
+body {
+  background-color: rgb(238, 238, 238);
+}
+
+.App {
+  text-align: center;
+  font-family: serif;
+}
+
+h1 {
+  font-family: Palatino, serif;
+  font-size: 90px;
+}
+
+img {
+  height: 80px;
+  margin-bottom: 1%;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  width: 100px;
+  height: 300px;
+  transition: 0.1s;
+  background-color: rgba(255, 255, 255, 0.535);
+  margin: 90px 150px 8px 5px;
+  padding: 30%;
+  -webkit-box-shadow: 10px -8px 20px -2px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 10px -8px 20px -2px rgba(0, 0, 0, 0.09);
+  box-shadow: 10px -8px 20px -2px rgba(0, 0, 0, 0.09);
+}
+
+.product-container:hover {
+  position: relative;
+  border-style: ridge;
+  border-color: rgba(10, 10, 10, 0.069);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.13);
+  transition: 0.1s;
+}
+
+.amount-container {
+  color: rgb(117, 117, 117);
+  font-size: 320%;
+  margin-top: 50px;
+}
+
+.offer-container {
+  font-size: 200%;
+  color: rgb(12, 194, 64);
+}
+
+.electronics-price-container {
+  text-decoration: line-through;
+}
+
+.amount-container:hover {
+  font-size: 325%;
+  transition: 0.1s;
+  color: rgb(12, 177, 59);
+}
+
+.badge-container {
+  background-color: rgb(253, 144, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 60px;
+  padding: 2px;
+}
+
+.title-container {
+  font-family: roboto;
+  width: 200px;
+  text-align: center;
+}
+
+.prices-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  img {
+    width: auto;
+    height: 100px;
+  }
+
+  .catalog {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .title-container {
+    margin: 20px 10px 20px 10px;
+    width: 310px;
+    text-align: center;
+  }
+
+  .product-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 350px;
+    height: 390px;
+    transition: 0.1s;
+    background-color: rgb(255, 255, 255);
+    margin: 30px 0px 1px 1px;
+    padding: 1%;
+  }
+
+  .product-container:hover {
+    cursor: pointer;
+    position: relative;
+    border-color: rgba(10, 10, 10, 0.069);
+    transition: 0.1s;
+  }
+}
